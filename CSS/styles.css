@@ -2,53 +2,250 @@ body{
     margin: 0;
     padding: 0;
 }
-.header{
-    margin: 0 auto;
+.wrapper{
     width: 640px;
-    height: 62px;
+    margin: 0 auto;
+    position: relative;
+}
+.header{
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 62px;
+    box-shadow: 0px 1px 2px #2c2c2a55;
 }
 .logo{
-    background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%);
-    width: 185px;
-    height: 62px;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    width: 186px;
+    height: 62px;
+    z-index: 10;
+    background-color: #2c2c2a;
+    background-image: linear-gradient(0deg, #00000055 0%, #ffffff55 100%);
 }
 .logo-img1{
-    border-radius: 6px;
-    width: 43px;
-    height: 41px;
     position: absolute;
     left: 10px;
     top: 10px;
-    display: none;
+    width: 43px;
+    height: 41px;
+    border-radius: 6px;
 }
 .logo-img2{
-    z-index: 10;
     position: absolute;
     left: 13px;
     top: 11px;
     width: 38px;
     height: 38px;
-    display: none;
+    z-index: 10;
+    
 }
 .logo-text{
+    margin-right: 25px;
     font-size: 19px;
-    letter-spacing: 0px;
+    letter-spacing: 5px;
     color: #ffffff;
     font-family: 'PT Sans', sans-serif;
     font-style: italic;
+    font-weight: 500;
     text-align: center;
     text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
+    letter-spacing: 2px;
+}
+@font-face {
+    font-family: 'Segoe WP';
+    src: url('../assets/fonts/SegoeWP.ttf');
+  }
+  @font-face {
+    font-family: 'Segoe UI';
+    src: url('../assets/fonts/Segoe\ UI.ttf');
+  }
+.nav-shadow-1, .nav-shadow-2{
+    position: absolute;
+    width: 453px;
+    height: 41px;
+    background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    opacity: 0.27;
+}
+.nav-shadow-1{
+    z-index: 0;
+    left: 180px;
+}
+.nav-shadow-2{
+    z-index: 1;
+    left: 185px;
 }
 .nav{
-    
+    display: flex;
+    justify-content: space-between;
+    width: 454px;
+    height: 62px;
+    z-index:100;
+    background-color: #f5c506;
+}
+.about-us{
+    width: 171px;
+    height: 100%;
+}
+.services{
+    width: 132px;
+    height: 100%;
+}
+.contact{
+    width: 149px;
+    height: 100%;
+}
+.about-us, .services{
+    border-right: 1px solid #dcb105;
+}
+.about-us-p, .services-p, .contact-p{
+    margin:0 0 0 10px;
+    line-height: 62px;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 0px;
+    color: #9b7d08;
+    font-family: 'Segoe WP', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+.about-us-p::before{
+    display: inline-block;
+    position: relative;
+    left: -12px;
+    top: 3px;
+    width: 24px;
+    height: 23px;
+    content: "";
+    background-image: url('../assets/img/Shape\ 5.svg');
+}
+.services-p::before{
+    display: inline-block;
+    position: relative;
+    left: -13px;
+    top: 3px;
+    width: 22px;
+    height: 22px;
+    content: "";
+    background-image: url('../assets/img/Shape\ 6.svg');
+}
+.contact-p::before{
+    display: inline-block;
+    position: relative;
+    left: -11px;
+    top: 2px;
+    width: 29px;
+    height: 22px;
+    content: "";
+    background-image: url('../assets/img/Shape\ 7.svg');
+}
+.main{
+    position: relative;
+    width: 100%;
+    height: 1450px;
+}
+.video{
+    background:transparent url('../assets/img/poster.png') no-repeat 0 0;
+}
+.yellow-filter{
+    position: absolute;
+    background-image: url('../assets/img/Layer\ 18.png');
+    width: 640px;
+    height: 320px;
+    top: 0px;
+}
+.buttons-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 174px;
+    z-index: 20;
+    font-size: 23px;
+    letter-spacing: 0px;
+    color: #000000;
+    font-family: "Segoe UI";
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}
+.buttons-block-shadow{
+    position: absolute;
+    top: 318px;
+    left: 0;
+    width: 640px;
+    height: 174px;
+    margin: 0 auto;
+    z-index: 0;
+    background: transparent url('../assets/img/Layer\ 27.png');
+}
+.buttons-block-shadow-2{
+    position: absolute;
+    top: 323px;
+    left: 0;
+    width: 640px;
+    height: 174px;
+    margin: 0 auto;
+    z-index: 0;
+    background: transparent url('../assets/img/Layer\ 27.png');
+}
+.better-design, .customise, .free{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    height: 100%;
+    z-index:100;
+}
+.better-design{
+    position: relative;
+    left: -17px;
+    top: 0px;
+}
+.customise{
+    position: relative;
+    left: 9px;
+    top: 0px;
+}
+.free{
+    position: relative;
+    left: -3px;
+    top: 0px;
+}
+
+.better-design-p, .customise-p, .free-p{
+    margin:0;
+    padding-top:25px;
+    letter-spacing: 0.5;
+}
+.twitter-section{
+    height:485px;
+    width: 100%;
+
+}
+.aside-twitter{
+    height: 232px;
+    width: 100%;
+    border: 10px solid white;
     display: flex;
     justify-content: center;
-    width: 455px;
-    height: 62px;
-    background-color: #f5c506;
+}
+.twitter-text{
+    width: 299px;
+    height: 100%;
+    background-color: #ec9e03;
+}
+.text-twitter-text{
+    width: 279px;
+    height: 307px;
+    font-size: 29px;
+    letter-spacing: 0px;
+    line-height: 33px;
+    color: #ffffff;
+    font-family: "Segoe WP";
+    font-weight: 100;
+}
+.twitter-video{
+    background:transparent url('../assets/img/Layer\ 29.png') no-repeat 0 0;
 }

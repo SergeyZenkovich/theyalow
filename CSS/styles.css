@@ -235,6 +235,9 @@ body{
     height:485px;
     width: 100%;
 }
+.twitter-lorem{
+    display: none;        
+}
 .aside-twitter{
     margin-top: -1px;
     height: 232px;
@@ -283,7 +286,7 @@ body{
     height: 233px;
     background: #f5c507;
 }
-.twitter img{
+.bird{
     height: 134px;
     position: relative;
     top: 8px;
@@ -358,6 +361,12 @@ body{
     height: 464px;
     background-color: #474747;
 
+}
+.scroll{
+    display: none;
+}
+.date{
+    display: none;
 }
 .resolution-text{
     margin: 0;
@@ -538,7 +547,7 @@ body{
     }
     .nav{
         position: relative;
-        top: 71px;
+        top: 72px;
         left: 125px;
         display: flex;
         justify-content: space-between;
@@ -613,14 +622,14 @@ body{
     }
     .video{
         position: relative;
-        left: 149px;
-        top: 6px;
-        background: transparent url(../assets/img/poster.png) no-repeat 0 0;
-        background-size: 116%;
+        left: 150px;
+        top: 68px;
+        background: transparent url('../assets/img/poster.png') no-repeat 0 0;
+        background-size: 117%;
         background-position: 59% 0%;
-        width: 550px;
+        width: 549px;
         height: 327px;
-    }
+}
     .yellow-filter{
         position: absolute;
         background-image: url('../assets/img/Layer\ 18.png');
@@ -652,7 +661,7 @@ body{
     .cool-min{
         display: block;
         position: relative;
-        top: -312px;
+        top: -249px;
         left: 287px;
     }
     .cool{
@@ -680,12 +689,12 @@ body{
     }
     .buttons-block{
         position: relative;
-        top: -195px;
+        top: -71px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        height: 212px;
+        height: 213px;
         z-index: 20;
         font-size: 23px;
         letter-spacing: 0px;
@@ -704,6 +713,7 @@ body{
         margin: 0 auto;
         z-index: 0;
         background: transparent url('../assets/img/Layer\ 27.png');
+        box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.42);
     }
     .buttons-block-shadow-2{
         display: none;
@@ -720,34 +730,47 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 200px;
-        height: 100%;
+        align-items: center;
+        width: 342px;
+        height: 210px;
         z-index:100;
+        border-right: 1px solid #d4d4d4;
+        
     }
     .better-design{
         position: relative;
-        left: 133px;
-        top: 14px;    
+        left: 94px;
+        top: -10px;
+        border-left: 1px solid #d4d4d4;   
     }
     .better-design img{
+        position: relative;
+        left: -4px;
+        top: 25px;
         width: 114px;
         height: 76px;
     }
     .customise{
         position: relative;
-        left: 66px;
-        top: 1px;
+        left: -1px;
+        top: -9px;
     }
     .customise img{
+        position: relative;
+        left: 12px;
+        top: 9px;
         width: 91px;
         height: 95px;
     }
     .free{
         position: relative;
-        left: -45px;
-        top: 13px;
+        left: -95px;
+        top: -8px;
     }
     .free img{
+        position: relative;
+        left: -9px;
+        top: 19px;
         width: 82px;
         height: 83px;
     }
@@ -757,7 +780,322 @@ body{
         letter-spacing: 0.5;
         font-size: 27px;
         position: relative;
-        left: -35px;
-        top: -14px;
+        left: 8px;
+        top: 9px;
+    }
+    .better-design-p{
+        left: 8px;
+        top: 9px;
+    }
+    .customise-p{
+        left: 12px;
+        top: -2px;
+    }
+    .free-p{
+        left: -6px;
+        top: 3px;
+    }
+    .twitter-section{
+        position: relative;
+        top: -78px;
+        left: 0px;
+        width: 100%;
+        height: 509px;
+        background: url('../assets/img/Layer\ 10\ copy\ 3.png');
+    }
+    .twitter-lorem{
+        position: relative;
+        display: block;
+        top: 30px;
+        left: 141px;
+        width: 918px;
+        height: 130px;
+        margin: 0;
+        font-size: 37px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: "PT Sans";
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .aside-twitter{
+        position: relative;
+        width: 656px;
+        top: -18px;
+        left: 139px;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+    }
+    .twitter-text{
+        width: 341px;
+        height: 100%;
+        background-color: #ec9e03;
+        position: relative;
+        display: flex;
+        justify-content: center; 
+        top: -1px;
+    }
+    .text-twitter-text{
+        font-size: 29px;
+        letter-spacing: 0px;
+        line-height: 38px;
+        color: #ffffff;
+        font-family: "Segoe WP";
+        font-weight: 100;
+        margin: 16px 0px;
+        padding: 0px 22px;
+    }
+    .twitter .plus{
+        position: absolute;
+        z-index: 10;
+        left: 316px;
+        top: 209px;
+        width: 11px;
+        height: 11px;
+    }
+    .plus{
+        position: absolute;
+        z-index: 10;
+        left: 308px;
+        top: 209px;
+        width: 11px;
+        height: 11px;
+    }
+    .twitter-video{
+        position: relative;
+        top: -2px;
+        left: 0px;
+    }
+    .twitter{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: -252px;
+        left: 830px;
+        width: 329px;
+        height: 233px;
+        background: #f5c507;
+    }
+    .bird{
+        position: relative;
+        height: 134px;
+        width: 164px;
+        top: 8px;
+        left: -15px;
+    }
+    .number{
+        position: relative;
+        margin: 0px;
+        top: -89px;
+        left: 215px;
+        font-size: 25px;
+        letter-spacing: 0px;
+        line-height: 38px;
+        color: #ffffff;
+        font-family: "Segoe WP";
+        font-weight: 300;
+
+    }
+    .message img{
+        display: none;
+        height: 134px;
+        width: 200px;
+    }
+    .messages-block{
+        position: relative;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        left: 17px;
+    }
+    .date{
+        display: block;
+        position: relative;
+        top: -253px;
+        left: 139px;
+        width: 114px;
+        height: 87px;
+        background-color: #ddb101;
+    }
+    .day{
+        position: relative;
+        top: 13px;
+        left: 30px;
+        margin: 0px;
+        font-size: 51px;
+        letter-spacing: 1px;
+        line-height: 38px;
+        color: #ffffff;
+        font-family: "Segoe UI";
+        font-weight: bold;
+    }
+    .month{
+        position: relative;
+        top: -9px;
+        left: 32px;
+        font-size: 21px;
+        letter-spacing: 0px;
+        line-height: 38px;
+        color: #b26529;
+        font-family: "Segoe UI";
+    }
+    .scroll{
+        display: block;
+        position: relative;
+        top: -212px;
+        left: 210px;
+        width: 896px;
+        height: 16px;
+        background: #fbe798aa;
+        outline: none;
+        opacity: 0.7;
+        -webkit-appearance: none;  
+        border-radius: 35px;
+        -webkit-transition: opacity .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
+}
+
+    .scroll::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 197px;
+        height: 16px;
+        background: #ec9e03;
+        cursor: pointer;
+        border-radius: 35px;
+  }
+    .resolution-section{
+        position: relative;
+        top: -79px;
+        width: 100%;
+        height: 495px;
+        background-color: #474747;
+    }
+    .resolution-text{
+        margin: 0;
+        padding: 35px 0px 0px 350px;
+        width: 918px;
+        height: 130px;
+        font-size: 43px;
+        letter-spacing: 0px;
+        color: #f5c506;
+        font-family: "PT Sans";
+        font-weight: 400;
+    }
+    .sale{
+        position: absolute;
+        top: 92px;
+        left: 120px;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        z-index: 50;
+    }
+    .sale p {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        color: #ffffff;
+        font-size: 19px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .devices{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    .pc{
+        position: relative;
+        top: -29px;
+        left: 24px;
+    }
+    .tablet{
+        position: relative;
+        width: 129px;
+        height: 173px;
+        top: -70px;
+        left: -221px;
+    }
+    .mobile{
+        position: relative;
+        width: 39px;
+        height: 63px;
+        top: -70px;
+        left: -467px;
+    }
+    .list{
+        position: relative;
+        top: -250px;
+        top: -254px;
+        left: 759px;
+        list-style-image: url('../assets/img/Ellipse\ 4\ copy.svg');
+    }
+    .list li{
+        width: 400px;
+        height: 45px;
+        line-height: 20px;
+        font-size: 22px;
+        letter-spacing: 0px;
+        color: #a9a9a7;
+        font-family: "Open Sans";
+        font-weight: 400;
+        padding-bottom: 5px;
+    }
+    .list li:nth-child(2){
+        padding-bottom: 21px;
+    }
+    .footer{
+        position: relative;
+        top: 231px;
+        display: flex;
+        width: 100%;
+        height: 65px;
+        background-color: #4c4c4c;
+        border-top: 1px solid #191919;
+        box-shadow: 0px -1px 3px #191919;
+    }
+    .logo-footer{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        width: 186px;
+        top: -2px;
+        left: 54px;
+        z-index: 10;
+
+    }
+    .logo-footer>.logo-img1{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 33px;
+        height: 31px;
+        border-radius: 6px;
+    }
+    .logo-footer>.logo-img2{
+        position: absolute;
+        left: 13px;
+        top: 11px;
+        width: 29px;
+        height: 29px;
+        z-index: 10;
+    }
+    .logo-footer>.logo-text{
+        margin-right: 25px;
+        font-size: 17px;
+        color: #ffffff;
+        letter-spacing: 2px;
+        font-family: 'PT Sans', sans-serif;
+        font-style: italic;
+        font-weight: 500;
+        text-align: center;
+        text-shadow: 1px 1.732px 0px rgba(0,0,0,0.42);
     }
 }

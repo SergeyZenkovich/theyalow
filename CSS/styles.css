@@ -99,6 +99,18 @@ body{
     width: 149px;
     height: 100%;
 }
+.about-us:hover{
+    background-color: #fae48d;
+    cursor: pointer;
+}
+.services:hover{
+    background-color: #fae48d;
+    cursor: pointer;
+}
+.contact:hover{
+    background-color: #fae48d;
+    cursor: pointer;
+}
 .about-us, .services{
     border-right: 1px solid #dcb105;
 }
@@ -265,7 +277,7 @@ body{
     margin: 16px 0px;
     padding: 0px 22px;
 }
-.plus{
+.twitter-text .plus{
     position: absolute;
     z-index: 10;
     left: 277px;
@@ -285,6 +297,17 @@ body{
     width: 100%;
     height: 233px;
     background: #f5c507;
+}
+.number{
+    display: none;
+}
+.twitter .plus{
+    display: none;
+}
+.plus:hover{
+    cursor: pointer;
+    background-color: silver;
+    border-radius: 50%;
 }
 .bird{
     height: 134px;
@@ -426,6 +449,9 @@ body{
     top: -40px;
     left: -18px;
 }
+.list{
+    display: none;
+}
 .footer{
     position: relative;
     top: -5px;
@@ -561,13 +587,25 @@ body{
         width: 171px;
         height: 100%;
     }
+    .about-us:hover{
+        background-color: #fae48d;
+        cursor: pointer;
+    }
     .services{
         width: 132px;
         height: 100%;
     }
+    .services:hover{
+        background-color: #fae48d;
+        cursor: pointer;
+    }
     .contact{
         width: 149px;
         height: 100%;
+    }
+    .contact:hover{
+        background-color: #fae48d;
+        cursor: pointer;
     }
     .about-us, .services{
         border-right: 1px solid #dcb105;
@@ -623,7 +661,7 @@ body{
     .video{
         position: relative;
         left: 150px;
-        top: 68px;
+        top: 6px;
         background: transparent url('../assets/img/poster.png') no-repeat 0 0;
         background-size: 117%;
         background-position: 59% 0%;
@@ -639,6 +677,7 @@ body{
         left: 149px;
     }
     .prev-contr{
+        display: block;
         position: relative;
         top: 199px;
         left: -1px;
@@ -654,6 +693,7 @@ body{
         left: 12px;
     }
     .next-contr{
+        display: block;
         position: relative;
         top: -407px;
         left: 1267px;
@@ -661,7 +701,7 @@ body{
     .cool-min{
         display: block;
         position: relative;
-        top: -249px;
+        top: -312px;
         left: 287px;
     }
     .cool{
@@ -689,7 +729,7 @@ body{
     }
     .buttons-block{
         position: relative;
-        top: -71px;
+        top: -195px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -709,11 +749,11 @@ body{
         top: 464px;
         left: 0;
         width: 100%;
-        height: 212px;
+        height: 213px;
         margin: 0 auto;
         z-index: 0;
         background: transparent url('../assets/img/Layer\ 27.png');
-        box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.42);
+        box-shadow: 0px -2px 2px 0px rgba(0,0,0,0.42);
     }
     .buttons-block-shadow-2{
         display: none;
@@ -732,7 +772,7 @@ body{
         justify-content: center;
         align-items: center;
         width: 342px;
-        height: 210px;
+        height: 213px;
         z-index:100;
         border-right: 1px solid #d4d4d4;
         
@@ -740,37 +780,37 @@ body{
     .better-design{
         position: relative;
         left: 94px;
-        top: -10px;
+        top: -7px;
         border-left: 1px solid #d4d4d4;   
     }
     .better-design img{
         position: relative;
         left: -4px;
-        top: 25px;
+        top: 22px;
         width: 114px;
         height: 76px;
     }
     .customise{
         position: relative;
         left: -1px;
-        top: -9px;
+        top: -7px;
     }
     .customise img{
         position: relative;
         left: 12px;
-        top: 9px;
+        top: 7px;
         width: 91px;
         height: 95px;
     }
     .free{
         position: relative;
         left: -95px;
-        top: -8px;
+        top: -7px;
     }
     .free img{
         position: relative;
         left: -9px;
-        top: 19px;
+        top: 18px;
         width: 82px;
         height: 83px;
     }
@@ -797,11 +837,12 @@ body{
     }
     .twitter-section{
         position: relative;
-        top: -78px;
+        top: -202px;
         left: 0px;
         width: 100%;
         height: 509px;
         background: url('../assets/img/Layer\ 10\ copy\ 3.png');
+        box-shadow: inset 0px 1px 3px rgba(0,0,0,0.42);
     }
     .twitter-lorem{
         position: relative;
@@ -846,21 +887,27 @@ body{
         margin: 16px 0px;
         padding: 0px 22px;
     }
-    .twitter .plus{
+    .twitter-text .plus{
         position: absolute;
         z-index: 10;
         left: 316px;
-        top: 209px;
+        top: 208px;
         width: 11px;
         height: 11px;
     }
-    .plus{
+    .twitter .plus{
+        display: block;
         position: absolute;
         z-index: 10;
         left: 308px;
         top: 209px;
         width: 11px;
         height: 11px;
+    }
+    .plus:hover{
+        cursor: pointer;
+        background-color: silver;
+        border-radius: 50%;
     }
     .twitter-video{
         position: relative;
@@ -876,16 +923,17 @@ body{
         left: 830px;
         width: 329px;
         height: 233px;
-        background: #f5c507;
+        background: #ec9e03;
     }
     .bird{
         position: relative;
         height: 134px;
         width: 164px;
         top: 8px;
-        left: -15px;
+        left: -14px;
     }
     .number{
+        display: block;
         position: relative;
         margin: 0px;
         top: -89px;
@@ -968,7 +1016,7 @@ body{
   }
     .resolution-section{
         position: relative;
-        top: -79px;
+        top: -203px;
         width: 100%;
         height: 495px;
         background-color: #474747;
@@ -1020,17 +1068,18 @@ body{
         position: relative;
         width: 129px;
         height: 173px;
-        top: -70px;
-        left: -221px;
+        top: -69px;
+        left: -222px;
     }
     .mobile{
         position: relative;
         width: 39px;
         height: 63px;
-        top: -70px;
+        top: -69px;
         left: -467px;
     }
     .list{
+        display: block;
         position: relative;
         top: -250px;
         top: -254px;
@@ -1059,37 +1108,36 @@ body{
         height: 65px;
         background-color: #4c4c4c;
         border-top: 1px solid #191919;
-        box-shadow: 0px -1px 3px #191919;
+        box-shadow: 0px -1px 2px #191919;
     }
     .logo-footer{
         position: relative;
         display: flex;
-        justify-content: flex-end;
-        width: 186px;
+        justify-content: center;
+        width: 270px;
         top: -2px;
-        left: 54px;
+        left: 129px;
         z-index: 10;
-
     }
     .logo-footer>.logo-img1{
         position: absolute;
         left: 10px;
         top: 10px;
-        width: 33px;
-        height: 31px;
-        border-radius: 6px;
+        width: 54px;
+        height: 54px;
+        border-radius: 9px;
     }
     .logo-footer>.logo-img2{
         position: absolute;
         left: 13px;
         top: 11px;
-        width: 29px;
-        height: 29px;
+        width: 51px;
+        height: 51px;
         z-index: 10;
     }
     .logo-footer>.logo-text{
         margin-right: 25px;
-        font-size: 17px;
+        font-size: 29px;
         color: #ffffff;
         letter-spacing: 2px;
         font-family: 'PT Sans', sans-serif;
